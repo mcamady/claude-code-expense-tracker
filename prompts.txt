@@ -1,0 +1,15 @@
+Locate the footer section in the project.
+
+Add two links inside the footer:
+1. "Contact Us"
+2. "Privacy Policy"
+
+Both links should have the URL set to "#".
+
+Do not modify any existing code, styling, layout, classes, or structure.
+Only append these two links in an appropriate place within the footer.
+
+Ensure the formatting matches the existing footer style.
+Do not refactor, rename, or remove anything.
+Return only the updated code.
+
