@@ -13,3 +13,49 @@ Ensure the formatting matches the existing footer style.
 Do not refactor, rename, or remove anything.
 Return only the updated code.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Create two new pages in this Flask application:
+1. Terms & Conditions
+2. Privacy Policy
+
+Requirements:
+
+1. Templates:
+- Create two HTML files inside the @templates directory:
+  - terms.html
+  - privacy.html
+- Each file should include a basic HTML5 structure.
+- Add appropriate headings:
+  - "Terms & Conditions"
+  - "Privacy Policy"
+- Keep styling consistent with existing templates (reuse base layout if present).
+
+2. Routes:
+- Add routes in the main Flask app file:
+  - /terms → renders terms.html
+  - /privacy → renders privacy.html
+
+3. Integration:
+- Ensure routes are properly registered with the Flask app.
+- Use render_template for both pages.
+- Do not modify or break any existing routes or logic.
+
+4. Footer Links (if footer exists in templates):
+- Add links to:
+  - /terms
+  - /privacy
+- Do not change existing layout or styles.
+
+5. Code Quality:
+- Follow the existing project structure and conventions.
+- Do not refactor unrelated code.
+- Only add the necessary templates and routes.
+
+Return:
+- New template files
+- Updated Flask app code (only the relevant additions)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
