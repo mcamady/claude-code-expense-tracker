@@ -1,3 +1,5 @@
+https://screenrec.com/share/e8fO7c0pDP
+
 Locate the footer section in the project.
 
 Add two links inside the footer:
@@ -59,3 +61,49 @@ Return:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Update the file @templates/landing.html.
+
+Requirement:
+When the user clicks the "starting tracking free" button, open a modal popup and play a YouTube video inside it.
+
+Details:
+
+1. Button Hook:
+- Find the button with text "starting tracking free".
+- Add an id or class if not present (e.g., id="startTrackingBtn").
+
+2. Modal:
+- Create a modal popup (use lightweight JS like Bootstrap modal or plain JavaScript).
+- Modal should be hidden by default.
+- Include:
+  - Close button (X)
+  - Overlay background
+  - Centered modal content
+
+3. Video Embed:
+- Inside the modal, embed this YouTube video using iframe:
+  https://www.youtube.com/embed/-Lt-ntUDj-g
+- Enable autoplay when modal opens.
+- Stop video when modal closes.
+
+4. JavaScript:
+- Add script to:
+  - Open modal on button click
+  - Inject/play video
+  - Close modal on click outside or close button
+  - Remove/reset iframe src on close (to stop playback)
+
+5. Styling:
+- Keep styling minimal and consistent with existing UI.
+- Do not break existing layout.
+
+6. Constraints:
+- Do not modify unrelated code.
+- Do not remove or refactor existing components.
+- Only add necessary HTML, CSS, and JS.
+
+Return:
+- Updated landing.html with all required additions only.
+
+
+------------------------------------------------------------------------------------------------------------------------------
