@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allowBash": true,
+    "allowWrite": true,
+    "allowRead": true,
+    "allowEdit": true,
+    "allowAgent": true
+  },
+  "hooks": {
+    "beforeRun": [
+      "echo 'Preparing environment...'",
+      "pip install -r requirements.txt"
+    ],
+    "afterCommit": [
+      "echo 'Running tests...'",
+      "pytest -v"
+    ]
+  },
+  "env": {
+    "FLASK_ENV": "development",
+    "FLASK_DEBUG": "1"
+  },
+  "model": "claude-3-5-sonnet-20241022",
+  "temperature": 0.3
+}
