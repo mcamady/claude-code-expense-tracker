@@ -7,13 +7,14 @@
     "allowAgent": true
   },
   "hooks": {
-    "beforeRun": [
-      "echo 'Preparing environment...'",
-      "pip install -r requirements.txt"
-    ],
-    "afterCommit": [
-      "echo 'Running tests...'",
-      "pytest -v"
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {"type": "command", "command": "echo 'Preparing environment...'"},
+          {"type": "command", "command": "pip install -r requirements.txt"}
+        ]
+      }
     ]
   },
   "env": {
